@@ -1,1 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #f5f0e8 0%, #e8dcc8 100%);
+    color: #3e2c1c;
+    min-height: 100vh;
+}
+
+#main-header {
+    background: #6b3e1f;
+    color: #f5e6c8;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#main-header h1 {
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #d4b483;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: #8b5a2b;
+    padding: 15px;
+}
+
+.menu a {
+    color: #f5e6c8;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.menu a:hover {
+    background: #d4a373;
+    color: #3e2c1c;
+    transform: translateY(-3px);
+}
+
+.menu a.active {
+    background: #f5e6c8;
+    color: #6b3e1f;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #6b3e1f;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #6b3e1f;
+    color: #f5e6c8;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #8b5a2b;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(107, 62, 31, 0.4);
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #fffaf0;
+    border-left: 6px solid #8b5a2b;
+    padding: 25px;
+    flex: 1 1 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #6b3e1f;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #3e2c1c;
+    color: #d4b483;
+    margin-top: 40px;
+}
