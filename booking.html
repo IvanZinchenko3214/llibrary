@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронирование книги</title>
+    <link rel="stylesheet" href="css/inner.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>📚 Городская библиотека</h1>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="booking.html" class="active">Бронирование</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <main>
+        <h2>Бронирование книги</h2>
+        <form class="booking-form" action="#" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="ivan@mail.ru" required>
+
+            <label for="book">Выберите книгу:</label>
+            <select id="book" name="book" required>
+                <option value="">-- выберите из списка --</option>
+                <option>Мастер и Маргарита</option>
+                <option>Война и мир</option>
+                <option>Евгений Онегин</option>
+                <option>Сто лет одиночества</option>
+            </select>
+
+            <label for="date">Дата получения:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Ваши пожелания..."></textarea>
+
+            <button type="submit" class="btn">Забронировать</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Городская библиотека</p>
+    </footer>
+</body>
+</html>
