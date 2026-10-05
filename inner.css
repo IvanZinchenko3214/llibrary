@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #eef3f7;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+#main-header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px;
+}
+
+#main-header h1 {
+    font-size: 2em;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background: #34495e;
+    padding: 0;
+}
+
+.menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 18px 30px;
+    transition: background 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.menu a:hover {
+    background: #1abc9c;
+    border-bottom: 3px solid #16a085;
+}
+
+.menu a.active {
+    background: #1abc9c;
+    border-bottom: 3px solid #16a085;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+main h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #1abc9c;
+    padding-bottom: 10px;
+}
+
+/* Таблица каталога */
+.books-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.books-table th,
+.books-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.books-table th {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.books-table tr:hover {
+    background: #f1f9f7;
+}
+
+.available {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.busy {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Форма бронирования */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 12px;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+.booking-form .btn {
+    background: #1abc9c;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.booking-form .btn:hover {
+    background: #16a085;
+}
+
+/* Контакты */
+.contact-info p {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+.map-placeholder {
+    background: #dfe6e9;
+    padding: 60px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #7f8c8d;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: #bdc3c7;
+    margin-top: 40px;
+}
